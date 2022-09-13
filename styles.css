@@ -1,0 +1,246 @@
+body {
+    background-color: #67acf8;
+    font-size: 18px;
+    color: #041c36;
+    font-family: Helvetica, sans-serif;
+    line-height: 1.5;
+    font-weight: 100;
+}
+
+body, html {
+    /* makes the page full height of window */
+    height: 100%;
+}
+
+article {
+    /* Setting margin to auto will horizontally center all elements in article within its container. */
+    margin: auto;
+}
+
+/* I wanted my nav to be displayed horizontally and therefore I used the display: inline, 
+as well as list-style: none to remove the bullet points */
+nav ul {
+    list-style: none;
+    display: inline;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+/* I used padding to change the spacing between between the list items to space them out equally 
+underneath the header */
+nav li {
+    font-size: 1.25em;
+    display: inline;
+    padding: 0 0.7em 0 0;
+    margin: 0;
+}
+
+h1 {
+    color: #211209;
+    text-align: left;
+    /* Used a custom font from Google called Oswald, but set helvetica as a fallback font in case oswald is not available in certain browsers */
+    font-family: 'Oswald', helvetica, sans-serif;
+    line-height: 0;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    font-family: Helvetica, sans-serif;
+    color: #211209;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+h3 {
+    color: #211209;
+}
+
+button {
+    /* I made this a block element and set the margin to auto to centre the button */
+    margin: auto;
+    display: block;
+    background: #041c36;
+    color: white;
+    /* I chose to apply a border to the button so when i hover over the button and the color changes, the border will remain */
+    border-width: 1px;
+    border-style: solid;
+    border-color: #041c36;
+    /* The border radius rounded the corners of the button */
+    border-radius: 30px;
+    padding: 20px 24px;
+    font-size: 18px;
+    
+}
+/* Hover changes the button color and text colour as well as the cursor type 
+when hovering the cursor over the button. 
+I did this to make the page seem more interactive and less static */
+button:hover {
+    background: white;
+    color: #041c36;
+    cursor: pointer;
+}
+
+/* I made this a block element and set the margin to auto to centre the video */
+iframe {
+    display: block;
+    margin: auto;
+}
+
+/* I made this a block element and set the margin to auto to centre the audio player 
+Was hoping to apply further styling to the audio element, but discovered I wasn't able to
+as some elements cannot be changed or only allow for limited styling */
+audio {
+    display: block;
+    margin: auto;
+}
+
+img {
+    display: block;
+    margin: auto;
+    /* Max width 100% ensures my image won't stretch any wider than the width I assigned in HTML*/
+    max-width: 100%;
+    /* I added padding to the bottom of the image to add space between the image and figcaption */
+    padding: 0 0 1em 0;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+}
+
+p {
+    text-align: left;
+}
+
+/* I made the links white to stand out against the text on the page and removed the underline */
+a {
+    color: white;
+    text-decoration: none;
+
+}
+
+/* Hover changes the link's text colour and adds an underline
+when hovering the cursor over the link. I did this to make the page seem more interactive and less static */
+a:hover {
+    text-decoration: underline;
+    color: #211209;
+}
+
+#japanese-breakfast-discography {
+   background-color: #041c36;
+    padding: 1em;  
+     /* Using a negative margin allowed me to remove the automatic space on that was automatically being applied around the div */
+    margin: 1em -0.5em 0em;
+}
+
+/* I used flex box to make the album cover images and title names appear in a row across the page
+I chose space evenly so that the spacing between the items and the edges would be even.*/
+#japanese-breakfast-discography ul {
+    /* list-style: none removes the bullet points on list items */
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* Align text center underneath each album cover image */
+    text-align: center;
+    color: white;
+    font-style: italic;
+    /* I set the padding and margin to 0 to remove the default left margin assigned by ul */
+    padding: 0;
+    margin: 0em;
+}
+
+#japanese-breakfast-discography h4 {
+    text-align: center;
+    color: white
+}
+
+#little-big-league-discography ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    color: white;
+    font-style: italic;
+    padding: 0;
+    margin: 0;
+}
+#little-big-league-discography {
+    background-color: #041c36;
+    padding: 1em;  
+    /* Using a negative margin allowed me to remove the automatic space on that was automatically being applied around the div */
+    margin: 0em -0.5em;
+}
+
+#little-big-league-discography h4{
+     text-align: center;
+    color: white
+}
+
+#music h5
+{
+    text-align: center;
+    color: #211209
+}
+
+/* I used flex box to make the links and icons display in a row across the page
+I chose justify-content: center to center items along the axis*/
+#links ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* The gap property assigns space between the items */
+    gap: 15px;
+    /* I set the padding and margin to 0 to remove the default left margin assigned by ul */
+    padding: 0;
+    margin: 0;
+}
+
+#contact {
+    background-color: #041c36;
+    padding: 1em;  
+    margin: 1em -0.5em 0em;
+}
+
+#contact h2 {
+    color: white;
+}
+
+#contact a {
+    /* underlined text so it would stand out against the white text on darker blue background color */
+    text-decoration: underline;
+}
+
+#contact a:hover {
+   color: #67acf8;
+}
+
+address {
+    text-align: center;
+    color: white;
+}
+
+/* I made the font size smaller on the footer so it would be apparent it is separate from the content of the page */
+footer p{
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    background-color: #041c36;
+    padding: 1em;  
+    margin: -1em;
+}
+
+footer a {
+    text-decoration: underline;
+}
+
+footer a:hover {
+   color: #67acf8;
+}
